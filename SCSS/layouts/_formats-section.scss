@@ -1,0 +1,40 @@
+
+.formats-section {
+
+&__container{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+  
+}
+
+  &__title {
+  margin-bottom: 80px;
+}
+
+  &__list {
+  display: flex;
+  flex-wrap: wrap;
+  // flex: 1; 
+  flex-grow: 1;
+  gap: 20px;
+}
+
+ &__item {
+  flex-basis: calc((100% - 40px) / 3);
+} 
+
+}
+
+
+  
+
+  
+  
+
+
+
+// .format-color {
+//   color: var(--color-primery-light);
+// }
