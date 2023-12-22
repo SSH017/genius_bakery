@@ -6,72 +6,141 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.footer::before,
-.footer::after {
+// &::before,
+// &::after {
+//   position: absolute;
+//   background-repeat: no-repeat;
+//   bottom: 0;
+//   content: "";
+// }
+
+&::before {
   position: absolute;
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: 300px;
   content: "";
-}
-
-.footer::before {
-  width: 180px;
-  height: 120px;
-  background-image: url(../Images/decor-bread-small.png);
+  width: 92px;
+  height: 196px;
+  background-image: url(/Images/decor-bread-mobile-large.png);
   left: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+   width: 180px;
+   height: 120px;
+   bottom: 0;
+   left: 0;
+   background-image: url(../Images/decor-bread-small.png);
+  
+    }
+}
+&::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: -30px;
+  content: "";
+  width: 110px;
+  height: 120px;
+  background-image: url(/Images/decor-bread-mobile-small.png);
+  right: -10px;
+
+@media screen and (min-width: $bp-tablet) {
+   width: 380px;
+   height: 190px;
+   bottom: 0;
+   right: 0;
+   background-image: url(../Images/decor-bread-large.png);
+  
+    }
+
 }
 
-.footer::after {
-  width: 380px;
-  height: 190px;
-  background-image: url(../Images/decor-bread-large.png);
-  right: 0;
-}
 
-.footer-container {
+&__container {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  // gap: 20px;
+
+   @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    
+  }
 }
 
-.footer-nav,
-.footer-address {
+&__nav,
+&__address {
   display: flex;
-  flex-basis: 50%;
-  gap: 20px;
+  flex-direction: column;
+  text-align: center; 
+  // gap: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;
+    text-align: left;
+  }
 }
 
-.footer-logo,
-.footer-menu {
+&__logo {
+  flex-grow: 1;
+  margin-bottom: 32px;
+}
+
+&__menu {
+  flex-grow: 1;
+  
+}
+
+&__address-list,
+&__address-info {
   flex-grow: 1;
 }
 
-.address-list,
-.address-info {
-  flex-grow: 1;
-}
-
-.address-link {
+&__address-link {
   color: var(--color-primery-light);
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  margin-bottom: 18px;
+
+   @media screen and (min-width: $bp-tablet)  {
+     margin-bottom: 16px;
+  }
+  
 }
 
-.address-link:hover {
+&__address-link:hover {
   color: var(--color-brand-light);
 }
 
-.address-icon {
+&__address-icon {
   fill: var(--color-primery-light);
+  margin-bottom: 8px;
 }
 
-.address-icon:hover {
+&__address-icon:hover {
   fill: var(--color-brand-light);
 }
 
-.address-copyright {
+&__address-policy {
+  color: var(--color-primery-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 8px;
+
+   @media screen and (min-width: $bp-tablet)  {
+     margin-bottom: 16px;
+  }
+  
+}
+
+&__address-copyright {
   color: var(--color-secondary-brawn);
   font-size: 14px;
 }
+
+}
+
+
+

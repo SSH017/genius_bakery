@@ -1,40 +1,28 @@
 
 .formats-section {
 
-&__container{
+&__slider{
   display: flex;
   align-items: center;
   gap: 32px;
-  flex: 1;
+  // flex: 1;
   
+}
+
+&__container{
+  overflow: hidden;
 }
 
   &__title {
-  margin-bottom: 80px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width:$bp-tablet)    {
+    margin-bottom: 80px;
+  }
 }
 
-  &__list {
-  display: flex;
-  flex-wrap: wrap;
-  // flex: 1; 
-  flex-grow: 1;
-  gap: 20px;
+&__list{
+  margin-bottom: 32px;
 }
 
- &__item {
-  flex-basis: calc((100% - 40px) / 3);
-} 
-
 }
-
-
-  
-
-  
-  
-
-
-
-// .format-color {
-//   color: var(--color-primery-light);
-// }

@@ -2,6 +2,11 @@
   color: var(--color-primery-light);
   text-decoration: none;
   transition: 0.3s;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $bp-tablet)  {
+     margin-bottom: 16px;
+  }
 }
 
 .link:hover {

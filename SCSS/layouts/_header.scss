@@ -3,7 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
   padding-top: 32px;
+  }
 
 &__container {
   display: flex;
@@ -18,12 +22,40 @@
   gap: 40px;
 }
 
+
+
 &__menu {
+  display: none;
+ 
+  @media screen and (min-width: $bp-desktop) {
   display: flex;
   gap: 64px;
   flex-grow: 1;
   justify-content: center;
+  }
 }
+
+&__button {
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+  display: block;
+  }
+
+}
+
+&__burger {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  fill:  var(--color-primery-light);
+
+    @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
 }
 
 
