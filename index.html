@@ -40,11 +40,6 @@
               <use href="./Images/icons.svg#icon-Vector"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
-            <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
-            </button>
-          </div>
         </div>
       </div>
     </header>
@@ -152,7 +147,7 @@
                   <h3 class="chef-card__title">Влад</h3>
                   <p class="chef-card__text">Привіт, я Влад!</p>
                   <p class="chef-card__text">
-                    Мій кодитерський стаж вже 18 років. 
+                    Мій кодитерський стаж вже 18 років.
                   </p>
                   <p class="chef-card__text">
                     SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з
@@ -290,10 +285,10 @@
               </div>
             </div>
             <button class="carousel-button next" type="button">
-            <svg width="16" height="16">
-              <use href="./Images/icons.svg#icon-Arrow-1"></use>
-            </svg>
-          </button>
+              <svg width="16" height="16">
+                <use href="./Images/icons.svg#icon-Arrow-1"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -502,6 +497,42 @@
         </form>
       </div>
     </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+      <button class="mobile-menu__btn-close menu-btn-close" type="button">
+        Close
+      </button>
+      <nav class="mobile-menu__nav">
+        <a href="./">
+          <img
+            class="logo"
+            src="./Images/logo.svg"
+            alt="Логотип Сучасна пекарня"
+          />
+        </a>
+        <ul class="mobile-menu__catalog">
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__text">
+        <svg width="100" height="100">
+          <path
+            id="circlePath"
+            d="M50 0 A50 50 0 1 0 50 100 A50 50 0 1 0 50 0"
+            fill="transparent"
+          />
+          <text>
+            <textPath href="#circlePath">
+              Традиції можуть бути сучасними з нами
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </div>
+    <!-- Ваши подключения скриптов -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./JS/formats-slider.js"></script>
     <script src="./JS/mobile-menu.js"></script>
